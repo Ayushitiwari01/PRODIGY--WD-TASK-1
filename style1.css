@@ -1,0 +1,156 @@
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+ }
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire frame */
+    z-index: -1; /* Places the video behind other content */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Black background color */
+    padding: 5px 5px; /* Adjust padding as needed */
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: orange; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color:white;
+    /* Change font color on hover */
+}
+
+.content {
+    
+    min-height: calc(100vh + 200px); /* Adjust the value to increase page height */
+    overflow-y: auto; /* Enable vertical scroll if content exceeds viewport */
+
+}
+
+
+
+h1, p {
+    text-align: center;
+}
+.travelgo-text {
+    font-size: 18px;
+    font-family: 'georgia';
+    font-weight: bold;
+    text-align: center;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+button:hover{
+    background-color: gold;
+}
+ /* Additional CSS for text enhancement */
+ .text {
+    position: absolute;
+    top: 20%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text */
+    font-size: 32px; /* Adjust font size as needed */
+    color: black; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+    padding: 2px;
+    text-align: center; /* Center align text */
+  
+    z-index: 10; /* Ensure it's above the video */
+}
+
+
+/* CSS to adjust image position */
+#background-video {
+    position: relative;
+    top: 100px; /* Adjust the value to shift the image down */
+   padding-top: 25px;
+}
+.head{
+    font-size: 48px; /* Adjust font size as needed */
+    color: rgb(95, 24, 24); /* Text color */
+   
+    font-family: Arial, sans-serif; /* Font family */
+    margin-bottom: 20px; /* Adjust margin bottom as needed */
+    text-align: center; /* Center align text */
+
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.media-icons {
+    text-align: center; /* Center align the icons */
+    background-color: black; /* Black background color */
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+.media-icons a {
+    color: white; /* White color for icon */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Add margin between icons */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.media-icons a:hover {
+    color: purple; /* Purple color on hover */
+}
+
+.website-name {
+    font-size: 20px; /* Adjust font size as needed */
+    color: white; /* Text color */
+    margin-right: auto; /* Pushes the website name to the left */
+    padding-left: 20px; /* Adds padding for spacing */
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+}
+
+
